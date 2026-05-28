@@ -30,8 +30,25 @@ Output folder: `script3_extracted/`
 
 Each entry is saved as `<index>_<checksum>.txt` (UTF-8). A `manifest.json` is also written with full entry metadata.
 
-### 2. Edit
+### 2. Edit / Translate
 Open any `.txt` file in the extracted folder and edit the text freely. Files are UTF-8 so any editor works.
+
+> ⚠️ **Only edit the `.txt` files — never the `.bin` files.**
+> `.bin` files are raw decoded bytes and are only there as a fallback. The repacker reads `.txt` first. If you edit a `.bin`, it gets ignored as long as a `.txt` with the same name exists.
+
+File priority the repacker uses per entry:
+```
+1. <index>_<checksum>.txt   ← edit this for translation
+2. <index>_<checksum>.bin   ← raw bytes, do not touch
+3. <index>_<checksum>.cipher.bin  ← encrypted blob, fallback only
+4. original entry from source archive
+```
+
+### Proof of concept
+
+Translation working in-game:
+
+![Translation working in-game](https://i.imgur.com/3c1dV98.jpeg)
 
 ### 3. Repack
 ```bash
