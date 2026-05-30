@@ -1,6 +1,6 @@
 # ACV1 Script Tools
 
-Tools buat extract, edit, dan repack script archive dari **Waga Himegimi ni Eikan o** (mungkin juga works buat title Forlos/vn_re-engine lainnya).
+Tools untuk extract, edit, dan repack script archive dari **Waga Himegimi ni Eikan o** (mungkin juga works buat title Forlos/vn_re-engine lainnya).
 
 **Requirements:** Python 3.10+, no external deps.
 
