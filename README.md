@@ -36,6 +36,9 @@ Open any `.txt` file in the extracted folder and edit the text freely. Files are
 > ⚠️ **Only edit the `.txt` files — never the `.bin` files.**
 > `.bin` files are raw decoded bytes and are only there as a fallback. The repacker reads `.txt` first. If you edit a `.bin`, it gets ignored as long as a `.txt` with the same name exists.
 
+> 🚫 **Do not edit entries `0000` through `0006`.**
+> These entries are **not** dialogue or script content — they are internal header/metadata entries used by the engine. The actual translatable script text begins at **`0007_1ccfe3193516609e.txt`**. Editing anything below index `0007` may corrupt the archive or cause the game to crash.
+
 File priority the repacker uses per entry:
 ```
 1. <index>_<checksum>.txt   ← edit this for translation
@@ -109,6 +112,8 @@ Encode is the reverse: `zlib.compress → XOR(script_key) → XOR(checksum32)`.
 ---
 
 ## Important Notes
+
+**Script entries start at index 0007** — After extraction, entries `0000` through `0006` are internal engine data and must not be edited. Only edit files from `0007_....txt` onwards. These are the entries that contain actual in-game dialogue and script text.
 
 **Encoding** — Script files are CP932 (Microsoft Shift-JIS). The extractor saves `.txt` as UTF-8 for easy editing; the repacker re-encodes to CP932 automatically. Do not change `--text-encoding` unless you know what you're doing.
 
