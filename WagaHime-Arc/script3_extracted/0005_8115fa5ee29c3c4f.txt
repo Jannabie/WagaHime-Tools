@@ -1,0 +1,20 @@
+
+*embed
+
+
+loadSqu "embed/main.nut"
+
+*embed2
+
+
+funcSqu saveFunc, 1
+funcSqu configFunc, 1
+funcSqu termFunc, 1
+funcSqu infoEnq, 0
+funcSqu getSaveTxt, 0
+
+funcSqu dr2x, 1
+funcSqu dr2y, 1
+funcSqu sqrt, 1
+
+return

@@ -1,0 +1,82 @@
+
+*local_setting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+string gss="実行ファイルが不正です"
+string mon="月",day="日",week="曜日"
+string wk0="日", wk1="月", wk2="火", wk3="水", wk4="木", wk5="金", wk6="土"
+string diaLogS1="次回この項目の確認ダイアログを表示しないようにします"
+string diaLogS2="次回起動時にサスペンド(休止)した場所からレジューム(復帰)します"
+string spMenuS00="メニュー表示の固定を切り替えます"
+string spMenuS01="ボイスをリプレイします"
+string spMenuS02="一つ前の選択肢に戻ります"
+string spMenuS03="バックログ画面を開きます"
+string spMenuS04="オートモードを実行します"
+string spMenuS05="スキップモードを実行します"
+string spMenuS06="一つ先の選択肢に進みます"
+string spMenuS07="クイックセーブします"
+string spMenuS08="クイックロードします"
+string spMenuS09="セーブ画面へ移動します"
+string spMenuS10="ロード画面へ移動します"
+string spMenuS11="コンフィグ画面へ移動します"s
+string spMenuS12="メッセージウィンドウを閉じます"
+string spMenuS13=""
+string selectTime="時間切れ"
+string selectLock="（選択不可）"
+string selectLog="【選択肢】"
+string logLoad="ここには戻れません"
+string saveData1="保護解除"
+string saveData2="保護"
+string saveData3="削除"
+string saveData4="Ｄ＆Ｄで移動"
+string configSysVo="システムボイスを再生するか設定します"
+string playerS2="前の曲"
+string playerS3="巻き戻し"
+string playerS4="停止"
+string playerS5="一時停止"
+string playerS6="再生"
+string playerS7="早送り"
+string playerS8="次の曲"
+string playerS90="ノーマル再生"
+string playerS91="リピート再生"
+string playerS92="ランダム再生"
+
+return

@@ -1,0 +1,629 @@
+
+
+*flag_format
+
+cal %g_repetition=0
+return
+
+
+*flag_boot
+int Width=1920, Height=1080, Width2=1920, AspectH=360, DBD=1
+
+int WidthH=%Width>>1, HeightH=%Height>>1, Multiply=3-%Width2/%Width
+string BlandName="みなとそふと"
+string GameName="我が姫君に栄冠を"
+string TrialName=" 体験版２", Version="1.01"
+string updateCheck=""//"http://www.mirai-soft.net/update/hanahime"
+
+setFontFileDefault "モトヤLシータ゛3等幅"
+
+string FontFile2="モトヤLシータ゛3等幅"
+int FontBold2=0
+
+
+
+
+
+
+int FontColer21=0xFFFFDE,FontColer22=0xE8CA84,FontColer23=0x000000
+int FontColer3=0xB27919
+return
+
+*flag_loading
+getCursor $0:if($0=="sys/cursor0.tlg") setCursor "sys/cursor2.tlg"
+addFontFile "sys/font/MTLc3m.ttf"
+addFontFile "sys/font/MTLmr3m.ttf"
+
+
+
+return
+
+
+*flag_setting
+
+int rmf,xmf,zmf
+
+int g_repetition=0
+
+string ノア="001"
+string エリン="002"
+string クロネ="003"
+string ウルシュラ="008":int g_008=0
+string エスクド="026"
+string フォル="035"
+string シュカ="021":int g_021=0
+string レイズ="022":int g_022=0
+string ガルデニャ="024":int g_024=0
+string ヨークシャ="018":int g_018=0
+string エビータ="004"
+
+
+variableExist %0,%s_v001
+for %1,%0,0
+int s_001=1
+int s_002=1
+int s_003=1
+int s_008=0
+int s_026=0
+int s_035=0
+int s_021=0
+int s_022=0
+int s_024=0
+int s_018=0
+int s_004=1
+int s_ex, s_ey, s_tutorial=0
+int s_SimpleWindow=0, s_boot=0
+int s_term00=0
+int s_term01=0
+int s_term10=0
+int s_term20=0
+int s_term30=0
+int s_term40=0
+int s_term41=0
+int s_term42=0
+int s_term43=0
+int s_term50=0
+int s_term60=0
+int s_term61=0
+int s_term62=0
+int s_clold=1
+
+cal %s_SimpleWindow=1
+
+
+int s_IconView=1, s_ModeView=1
+
+
+int s_FaceView=1
+
+int s_sysvo=0, s_clear=1
+int s_v001=100, s_m001=1
+int s_v002=100, s_m002=1
+int s_v003=100, s_m003=1
+int s_v004=100, s_m004=1
+int s_v048=100, s_m048=1
+int s_v005=100, s_m005=1
+int s_v006=100, s_m006=1
+int s_v008=100, s_m008=1
+int s_v009=100, s_m009=1
+int s_v017=100, s_m017=1
+int s_v018=100, s_m018=1
+int s_v020=100, s_m020=1
+int s_v021=100, s_m021=1
+int s_v022=100, s_m022=1
+int s_v024=100, s_m024=1
+int s_v023=100, s_m023=1
+int s_v025=100, s_m025=1
+int s_v026=100, s_m026=1
+int s_v027=100, s_m027=1
+int s_v028=100, s_m028=1
+int s_v030=100, s_m030=1
+int s_v035=100, s_m035=1
+int s_v036=100, s_m036=1
+int s_v037=100, s_m037=1
+int s_v038=100, s_m038=1
+int s_v039=100, s_m039=1
+int s_v042=100, s_m042=1
+int s_v046=100, s_m046=1
+int s_v047=100, s_m047=1
+int s_v051=100, s_m051=1
+int s_v043=100, s_m043=1
+int s_v040=100, s_m040=1
+int s_v044=100, s_m044=1
+int s_v052=100, s_m052=1
+int s_v053=100, s_m053=1
+int s_v062=100, s_m062=1
+int s_v033=100, s_m033=1
+int s_v029=100, s_m029=1
+int s_v034=100, s_m034=1
+int s_v032=100, s_m032=1
+int s_v019=100, s_m019=1
+int s_v050=100, s_m050=1
+int s_v058=100, s_m058=1
+int s_v059=100, s_m059=1
+int s_v060=100, s_m060=1
+int s_v057=100, s_m057=1
+int s_v049=100, s_m049=1
+int s_v045=100, s_m045=1
+int s_v068=100, s_m068=1
+int s_v069=100, s_m069=1
+int s_v067=100, s_m067=1
+int s_v301=100, s_m301=1
+int s_v601=100, s_m601=1
+
+cal $CursorFile="sys/cursor1"+$ext:setCursor $CursorFile
+cal $WallPaperFile="sys/wall1"+$ext:setWallPaper $WallPaperFile
+
+
+int s_ConfigPage1ex1=1
+
+
+
+
+next
+cal %s_boot+=1
+
+
+int VoiceChara=-1,VoiceMobu1,VoiceNum=180
+cal %0=01,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=02,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=03,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=04,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=48,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=05,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=06,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=08,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=09,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=17,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=18,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=20,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=21,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=22,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=24,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=23,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=25,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=26,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=27,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=28,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=30,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=35,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=36,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=37,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=38,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=39,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=42,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=46,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=47,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=51,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+
+cal %0=43,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=40,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=44,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=52,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=53,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=62,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=33,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=29,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=34,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=32,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=19,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=50,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=58,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=59,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=60,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=57,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=49,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=45,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=68,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=69,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+cal %0=67,%VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2=$(%0)3:int "g_em"+$(%VoiceChara)=-1,"st"+$(%0)=%VoiceChara
+
+cal %50=%VoiceChara,%VoiceMobu1=%50
+cal %0=07,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=10,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=11,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=12,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=2
+cal %0=13,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=14,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=15,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=16,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=31,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=54,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=55,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=56,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=61,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=2
+cal %0=63,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=64,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=2
+cal %0=65,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+cal %0=66,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=2
+cal %0=70,%50+=1:int "g_em"+$(%50)=-1,"st"+$(%0)=%50,"cv"+$(%0)=1
+
+
+int VoiceMobu2=%VoiceNum+%VoiceChara
+cal %VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2="301"
+cal %VoiceChara+=1,%2=%VoiceNum+%VoiceChara,$%2="601"
+string sysVoStr="_Z1_00"
+
+
+int CharaNum=%50, StSp=920, StW=2048, StH=1536
+
+
+
+int StY=%Height-%StH/2+200
+
+
+
+int S002_1AA1ABh=320
+int S002_2AA1ABh=320
+int S002_2AA1ACh=19
+int S002_2AA1BAh=19
+string S002_1AA1AC
+string S002_2AA1AC
+
+int S003_1AA1AAh=79
+int S003_1AA1BAh=79
+int S003_1AA1CAh=79
+int S004_1AA1BCy=146
+int S004_1AA1CCy=146
+int S004_1AA1DAy=354
+string S004_1AA1BC
+string S004_1AA1CC
+string S004_1AA1DA
+int S005_1AA1AAx=30
+int S005_1AA2AAx=30
+int S005_1AA3AAx=30
+int S005_2AA1AAy=340
+int S005_2AA2AAy=290
+int S005_2AA3AAy=340
+string S005_2AA1AA
+string S005_2AA2AA
+string S005_2AA3AA
+int S006_1AA1BAw=40
+int S006_1AA1BBw=40
+int S007_1AA1AAh=84
+int S007_1AA1AAy=-30
+string S007_1AA1AA
+int S008_1AB1AAh=10
+int S008_1AB1ABh=10
+int S008_1AB1ACh=10
+int S008_1AB1BAh=10
+int S009_1AA1AAh=30
+int S009_1AA1BAh=145
+string S009_1AA1BA
+int S010_1AA1AAh=90
+string S010_1AA1AA
+string S011_1AA1AA
+int S012_1AA1AAx=30
+int S013_1AA1AAh=60
+
+int S015_1AA1AAh=20
+int S015_1AA1AAy=-20
+string S015_1AA1AA
+
+int S018_1AA1AAh=94
+int S018_1AA1BAh=94
+string S018_1AA1AA
+string S018_1AA1BA
+
+int S019_1AA1AAh=100
+int S019_1AA1AAy=-20
+string S019_1AA1AA
+int S019_1AA1BAh=100
+int S019_1AA1BAy=-20
+string S019_1AA1BA
+int S019_1AA1BBh=100
+int S019_1AA1BBy=-20
+string S019_1AA1BB
+int S019_1AB1AAh=100
+int S019_1AB1AAy=111
+string S019_1AB1AA
+int S019_1AB1BAh=100
+int S019_1AB1BAy=111
+string S019_1AB1BA
+int S019_1AB1BBh=100
+int S019_1AB1BBy=111
+string S019_1AB1BB
+
+int S021_1AA1AAh=24
+int S021_1AA1BAh=24
+int S022_1AA1AAy=208
+int S022_1AA1BAy=208
+int S022_1AA1BBy=208
+int S022_1AA1CAy=208
+int S022_1AB1AAy=110
+int S022_1AB1BAy=110
+int S022_1AB1BBy=110
+int S022_1AB1CAy=110
+int S022_1AC1AAy=150
+int S022_1AC1BAy=150
+int S022_1AC1BBy=150
+int S022_1AC1CAy=150
+string S022_1AA1AA
+string S022_1AA1BA
+string S022_1AA1BB
+string S022_1AA1CA
+string S022_1AB1AA
+string S022_1AB1BA
+string S022_1AB1BB
+string S022_1AB1CA
+string S022_1AC1AA
+string S022_1AC1BA
+string S022_1AC1BB
+string S022_1AC1CA
+int S023_1AA1AAh=77
+int S023_1AA1ABh=77
+int S023_1AA1BAh=77
+int S023_1AA1BBh=77
+int S023_1AB1AAh=77
+int S023_1AB1ABh=77
+int S023_1AB1BAh=77
+int S023_1AB1BBh=77
+string S023_1AA1AA
+string S023_1AA1AB
+string S023_1AA1BA
+string S023_1AA1BB
+string S023_1AB1AA
+string S023_1AB1AB
+string S023_1AB1BA
+string S023_1AB1BB
+int S024_1AA1AAh=150
+int S024_1AA1BAh=150
+int S024_1AB1AAh=150
+int S024_1AB1BAh=150
+string S024_1AA1AA
+string S024_1AA1BA
+string S024_1AB1AA
+string S024_1AB1BA
+int S025_1AA1AAh=128
+int S025_1AB1AAh=128
+int S025_1AC1AAh=128
+int S025_1BA1AAh=128
+int S025_1CA1AAh=128
+int S025_1DA1AAh=128
+string S025_1AA1AA
+string S025_1AB1AA
+string S025_1AC1AA
+string S025_1BA1AA
+string S025_1CA1AA
+string S025_1DA1AA
+
+int S026_1AA1AAy=469
+int S026_1AB1AAy=469
+string S026_1AA1AA
+string S026_1AB1AA
+
+int S027_1AA1AAh=129
+int S027_1AB1AAh=129
+
+int S028_1AA1BAy=834
+string S028_1AA1AA
+string S028_1AA1BA
+string S028_1AB1AA
+
+int S031_1AA1AAy=20
+string S031_1AA1AA
+int S034_1AA1AAh=10
+string S036_1AA1AA
+string S036_1AA1BA
+string S036_1BA1AA
+string S036_1BA1BA
+string S037_1AA1AA
+string S037_1AA1BA
+string S037_1BA1AA
+string S037_1BA1BA
+string S037_1BA1CA
+
+int S040_1AA1AAh=60
+int S040_1AA1BAh=60
+int S040_1AA1CAh=60
+int S040_1AB1AAh=60
+int S040_1AB1BAh=60
+int S040_1AB1CAh=60
+int S040_2AB1AAh=100
+int S040_2AB1BAh=100
+int S040_2AB1CAh=100
+string S040_1AA1CA
+string S040_1AB1CA
+string S040_2AB1CA
+
+int S043_1BA1AAh=3
+int S043_1CA1AAh=23
+
+int S044_1AA1AAy=227
+int S044_1AA1ABy=227
+int S044_1AA1BAy=227
+int S044_1AA1BBy=227
+string S044_1AA1AA
+string S044_1AA1AB
+string S044_1AA1BA
+string S044_1AA1BB
+
+int S045_1AA1AAy=252
+string S045_1AA1AA
+int S045_1AA1BAy=252
+string S045_1AA1BA
+int S045_1AB1AAy=252
+string S045_1AB1AA
+
+int S046_1AA1AAy=300
+string S046_1AA1AA
+int S046_1AA1BAy=300
+string S046_1AA1BA
+int S046_1AA1CAy=343
+string S046_1AA1CA
+
+int S047_1AA1AAh=55
+int S047_1AA1BAh=55
+int S047_1AA1AAy=-20
+int S047_1AA1BAy=-20
+string S047_1AA1AA
+string S047_1AA1BA
+
+int S047_1BA1AAh=55
+int S047_1BA1BAh=55
+int S047_1BA1AAy=-20
+int S047_1BA1BAy=-20
+string S047_1BA1AA
+string S047_1BA1BA
+
+int S048_1AA1AAy=199
+int S048_1AA1BAy=199
+int S048_1AA1CAy=199
+string S048_1AA1AA
+string S048_1AA1BA
+string S048_1AA1CA
+
+int S049_1AA1AAh=20
+int S049_1AA1AAy=-20
+string S049_1AA1AA
+int S049_1AA1BAh=20
+int S049_1AA1BAy=-20
+string S049_1AA1BA
+
+int S051_1AA1AAh=60
+int S051_1AA1BAh=60
+string S051_1AA1AA
+string S051_1AA1BA
+int S054_1AA1AAh=20
+int S054_1AA1AAy=207
+string S054_1AA1AA
+int S055_1AA1AAh=20
+int S055_1AA1AAy=40
+string S055_1AA1AA
+int S057_1AA1AAh=20
+int S057_1AA1AAy=-20
+string S057_1AA1AA
+int S058_1AA1AAh=20
+int S058_1AA1AAy=191
+string S058_1AA1AA
+int S059_1AA1AAh=20
+int S059_1AA1AAy=174
+string S059_1AA1AA
+int S060_1AA1AAh=20
+int S060_1AA1AAy=314
+string S060_1AA1AA
+int S061_1AA1AAh=5
+int S062_1AA1AAh=29
+int S062_1AA1AAy=-20
+string S062_1AA1AA
+int S066_1AA1AAh=5
+int S066_1AA1AAy=86
+string S066_1AA1AA
+int S067_1AA1AAh=20
+string S067_1AA1AA
+int S068_1AA1AAh=90
+string S068_1AA1AA
+int S069_1AA1AAh=20
+string S069_1AA1AA
+
+string S070_1AA1AA
+int S070_1AA2AAy=186
+string S070_1AA2AA
+int S070_1AA2BAy=186
+string S070_1AA2BA
+
+int S301_1AA1AAy=391
+int S301_1BA1AAy=391
+int S301_1CA1AAy=391
+
+int S302_1AA1AAy=627
+string S302_1AA1AA
+int S302_1BA1AAy=627
+string S302_1BA1AA
+int S303_1AA1AAy=370
+string S303_1AA1AA
+int S303_1BA1AAy=370
+string S303_1BA1AA
+int S304_1AA1AAy=386
+string S304_1AA1AA
+int S304_1BA1AAy=386
+string S304_1BA1AA
+int S305_1AA1AAy=148
+string S305_1AA1AA
+int S305_1BA1AAy=148
+string S305_1BA1AA
+
+int S601_1AA1AAy=442
+int S601_1BA1AAy=442
+int S601_1CA1AAy=442
+int S601_1DA1AAy=442
+string S601_1AA1AA
+string S601_1BA1AA
+string S601_1CA1AA
+string S601_1DA1AA
+
+int S307_1AA1AAy=-10
+string S307_1AA1AA
+
+int S416_1AA1AAh=45
+int S417_1AA1AAh=45
+int S552_1AA1AAh=30
+
+
+
+
+int Another0	=0xFFFFFF
+int Another1	=0xFFFFFF
+int Another2	=0xFFFFFF
+
+
+
+string g_tc
+int g_tc1, tc1_, g_tc2, tc2_
+int tc1_00=0, tc2_00=0x000000
+int tc1_01=0, tc2_01=0x000000
+int tc1_02=7, tc2_02=0x0C0500
+int tc1_03=0, tc2_03=0x000000
+int tc1_04=4, tc2_04=0xD2DEFF
+int tc1_05=0, tc2_05=0x000000
+int tc1_06=4, tc2_06=0xEFFFFF
+int tc1_07=4, tc2_07=0xEFFFFF
+int tc1_08=0, tc2_08=0x000000
+int tc1_09=4, tc2_09=0xA5BEFF
+int tc1_10=4, tc2_10=0xA5BEFF
+int tc1_11=0, tc2_11=0x000000
+int tc1_12=0, tc2_12=0x000000
+
+
+
+
+int emN=39,emS=35,emM=66,emL=100
+
+int S001N1x= 000, S001N1y=-270, S001S1x= 000, S001S1y=-160, S001M1x= 000, S001M1y=-130, S001L1x= 000, S001L1y=-080, S0011= 1
+
+int S002N1x=-010, S002N1y=-210, S002S1x=-010, S002S1y=- 90, S002M1x=-010, S002M1y=- 90, S002L1x=-010, S002L1y=-080, S0021= 1
+
+int S003N1x= 010, S003N1y=-290, S003S1x= 010, S003S1y=-185, S003M1x= 010, S003M1y=-130, S003L1x= 010, S003L1y=-070, S0031= 1
+
+int S004N1x= 000, S004N1y=-210, S004S1x=-000, S004S1y=- 10, S004M1x= 000, S004M1y=- 70, S004L1x= 000, S004L1y=-100, S0041= 1
+
+int S008N1x= 000, S008N1y=-220, S008S1x=-000, S008S1y=- 80, S008M1x= 000, S008M1y=- 90, S008L1x= 000, S008L1y=-090, S0081=-1
+
+int S017N1x= 000, S017N1y=-240, S017S1x=-000, S017S1y=-110, S017M1x= 000, S017M1y=-140, S017L1x= 000, S017L1y=-140, S0171= 1
+
+int S018N1x= 000, S018N1y=-250, S018S1x=-000, S018S1y=-120, S018M1x= 000, S018M1y=-150, S018L1x= 000, S018L1y=-170, S0181= 1
+
+int S048N1x= 000, S048N1y=-360, S048S1x=-000, S048S1y=-320, S048M1x= 000, S048M1y=-250, S048L1x= 000, S048L1y=-170, S0481= 1
+
+int S051N1x= 000, S051N1y=-240, S051S1x=-000, S051S1y=- 90, S051M1x= 000, S051M1y=-120, S051L1x= 000, S051L1y=-170, S0511=-1
+
+int S067N1x= 000, S067N1y=-200, S067S1x=-000, S067S1y= -50, S067M1x= 000, S067M1y=-100, S067L1x= 000, S067L1y=-120, S0671=-1
+
+
+int 閃き1x=-140, 閃き1y=-120
+int 音符1x=-140, 音符1y= 000
+int 驚き1x=-140, 驚き1y=-140
+int 驚き2x=-130, 驚き2y=-130
+int 睡眠1x=-100, 睡眠1y=-040
+int 溜息1x=-040, 溜息1y= 120
+int 汗1x=-120, 汗1y= 000
+int 汗2x=-000, 汗2y= 000
+int 怒り1x=-120, 怒り1y=-050
+int 三線1x=-160, 三線1y=-140
+int 三線2x=-160, 三線2y= 040
+int ！1x=-120, ！1y=-100
+int ！2x=-120, ！2y=-100
+int ！3x=-120, ！3y=-100
+int ？1x=-120, ？1y=-100
+return
+

@@ -1,0 +1,1731 @@
+*B1_0009_0
+
+
+
+
+BGM BGM_05
+
+CG 1, bg/WHITE@@2, 1, @@0, , 0@0@100@100
+CG.WH 1, 1, 1920, 1080
+
+BG.WH 0, 100, 100
+BG BG_099_00_0, 1000@1, FadeCircleOut, 960@540
+
+CS "Winged Pride"
+AS
+
+CG.A 1, 500, 128
+CG.A 1, 500@1@@2, 0
+
+
+
+MW.FC S035_1CA1AA_120_S
+【Foru,S035_B2_0034】「＊yawn*... My head hurts... I won’t drink anymore... At least, not today... I swear to Megion that 」
+
+MW.FC S035_1CA1AA_045_S
+【Foru,S035_B2_0035】「Ahhh, I’m sleepy, uuu, for now, let’s take a shower. Shower... 」
+
+SE0 シャワー, 500, 100@0, 0
+
+BG.WH 0, 100, 100
+BG BLACK, 250, FadeIrisInUpDown
+
+WA 1000,,0
+
+SE0 , 250
+
+BG.WH 0, 150, 150
+ST S035_1AA1AA_010_L, 0, , ,
+BG BG_049_00_0, 250@1, FadeIrisOutUpDown, 480@540
+
+SE0 インパクトＳＥシュピーン, 0, 100@0, 1
+SC.FL 1@0xAAAAAA, 140, 1
+
+
+【Foru,S035_B2_0036】「Okay, I feel better. Let’s get back to work today... Hm?」
+
+WA 1
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeDirectionRight
+
+ST S061_1AA1AA_000_N, 0, , ,
+BG BG_049_00_0, 150@1, FadeDirectionRight,
+
+【Chimes,S061_B2_0002】「I-It’s okay, I’ll do that. 」
+
+【Shaon】「Thank you for taking care of me, so I’m going to do it. 」
+
+BG.WH 0, 125, 125
+BG.XY 0, 720,
+
+ST S061_1AA1AA_000_M, 0, 580, ,
+ST S035_1AA1AA_060_M, 0, 1420@@@3,
+SC.FD 150,,0
+
+【Foru,S035_B2_0037】「Good morning. What’s wrong with the bells? I can pretty much imagine it.」
+
+ST S061_1AA1AA_000_M, 250, , ,
+
+【Chimes,S061_B2_0003】「When Shaon-sama helps me clean and do laundry... 」
+
+【Shaon】「Yes. Please let me do something. 」
+
+ST S061_1AA1AA_000_M, 250, , ,
+ST S035_1AA1AA_042_M, 250, , ,
+
+【Foru,S035_B2_0038】「Everyone has their own job to do. The chimes are masters of housework, so please don’t take that.」
+
+【Shaon】「! ...I’m sorry, Chimes」
+
+ST.DEL 61, 0,
+BG.WH 0, 150, 150
+
+ST S035_1AA1AA_010_L, 0, 960, ,
+BG BG_049_00_0, 150@1, , 600@
+
+【Foru,S035_B2_0039】「Shaon-kun, since you’re in the capital, you should go see the coliseum today. 」
+
+【Shaon】「I heard about that in town yesterday.」
+
+ST S035_1AA1AA_000_L, 250, , ,
+
+【Foru,S035_B2_0040】「Today’s the day of the match. I think it’ll be good social studies. I’ll let Radha guide you. Everyone go together at 」
+
+【Shaon】「Thank you very much. I will wake everyone up at 」
+
+ST S035_1AA1AA_010_L, 250, , ,
+
+【Foru,S035_B2_0041】「I’ll arrange for you to meet Shaon and the higher-ups.」
+
+BGM , 250
+BG.WH 0, 100, 100
+BG BLACK, 250, FadeClockRight@128
+
+
+
+BGM BGM_32
+
+BG.WH 0, 100, 100
+BG BG_012_00_0, 250, FadeClockRight@128, 960@540
+
+SE0 歓声, 0, 100@0, 1
+
+CG.AN 8, エア・中央@4@5, 1@@16, @@@, 0
+CG.WH 8, 0, 200, 200
+
+SC.FL 1@0xFFFFFF, 280, 1
+SC.SK 1, 300@0@2, 6@4, 0
+
+【】A tremendous roar engulfs the arena.
+
+WA 1
+
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeIrisInUpDown
+
+SE0 , 250
+
+SC.FL 1@0xFFFFFF, 0, 0
+SC.SK 1, 0@0@2, 0@0, 0
+
+BG.WH 0, 200, 200
+ST S008_1AA1AA_010_M, 0, 1520, ,
+ST S038_1AA1AA_010_M, 0, 340, ,
+ST S004_1AA1BB_022_M, 0, 960, ,
+
+BG BG_012_00_0, 150@1, FadeIrisOutUpDown, 240@720
+
+ST.EM 004, 驚き1_1, 1, 0
+
+【Ebita,S004_B2_0055】「Amazing. I’ve never seen so many people here before! 」
+
+ST S004_1AA1BB_020_M, 250, , ,
+ST S038_1AA1AA_031_M, 250, , ,
+
+【Rada,S038_B2_0016】「Let the fighters and monsters fight, and the audience will bet on who wins. Just watch and enjoy... That’s the coliseum. It’s a specialty of the imperial capital, Starry Gate.」
+
+ST S038_1AA1AA_020_M, 250, , ,
+
+【Rada,S038_B2_0017】「There are other races that compete for speed. I like that one a lot too~ 」
+
+ST S008_1AA1BA_020_M, 250, , ,
+ST.DU 008, 500@0@2, 40, 1
+
+【Urszula,S008_B2_0068】「I’m full of fighting spirit! It’s starting to itch! 」
+
+WA 1
+
+BG.WH 0, 100, 100
+BG BLACK, 250, FadeShutterUp
+
+BG.WH 0, 100, 100
+ST S056_1AA1BA_000_N, 0, , ,
+BG BG_012_00_0, 250@1, FadeShutterUp, 960@540
+
+【Ponse@Host Ponse,S056_B2_0001】「First card. The rules are martial, heavenly! High-strung fighter raised in the northern Storm! Steiken!! I’ve already won eight!」
+
+WA 1
+
+BG BLACK, 150, FadeDirectionRight
+
+WA 50,,0
+
+BG.WH 0, 150, 150
+ST S055_1AA1AA_000_M, 0, , ,
+
+SE0 大歓声２, 0, 100@0, 1
+
+BG BG_012_00_0, 150@1, FadeDirectionRight, 1440@540
+
+【Steiken,S055_B2_0001】「Hey, hey! Come at me! 」
+
+SE0 , 250
+
+ST.DEL , 0, 0
+BG.WH 0, 100, 100
+BG.XY 0, 960, 540
+
+ST S056_1AA1BA_000_N, 0, , ,
+SC.FD 150
+
+【Ponse@Host Ponse,S056_B2_0002】「Meanwhile, the bull of Nanbu Bagel! Jacoby!! I just won one last time! 」
+
+WA 1
+
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeDirectionLeft
+
+BG.WH 0, 150, 150
+ST S054_1AA1AA_000_M, 0, , ,
+
+SE0 大歓声３, 0, 100@0, 1
+
+BG BG_012_00_0, 150@1, FadeDirectionLeft, 480@540
+
+【Jacobie,S054_B2_0001】「I’m so glad my opponent’s so lively. I’ll throw him down.」
+
+WA 1
+
+SE0 , 250
+
+BG BLACK, 150, FadeIrisInUpDown
+
+WA 50,,0
+
+BG.WH 0, 200, 200
+ST S008_1AA1AA_010_M, 0, 1520, ,
+ST S004_1AA1AA_020_M, 0, 960, ,
+ST S038_1AA1AA_031_M, 0, 340, ,
+
+BG BG_012_00_0, 150@1, FadeIrisOutUpDown, 240@720
+
+【Rada,S038_B2_0018】「Now, time to show off. If you’re going to bet, now’s your chance. Steyken or Jacoby」
+
+【】The two fighters are performing a performance to show their strength.
+
+【Shaon】「Who do you think will win, Urszula?」
+
+ST S004_1AA1AA_000_M, 250, , ,
+ST S008_1AA1AB_001_M, 250, , ,
+
+【Urszula,S008_B2_0069】「Hmm. Both of them have a pretty strong atmosphere, but judging by their movements... I don’t think that Jacoby can catch Steyken’s speed. 」
+
+ST S008_1AA1AB_000_M, 250, , ,
+ST S038_1AA1BA_010_M, 250, , ,
+
+【Rada,S038_B2_0019】「But the rule is that there’s a martial arts heaven. You can use both weapons and Heavenly Familias. I have no idea what’s going to happen. 」
+
+ST.DEL , 0, 0
+BG.XY 0, 1500, 720
+
+ST S048_1AA1AA_032_L, 0, @@, ,
+SC.FD 150
+
+
+【Minjara,S048_B2_0048】「I’m worried about fighting, but I’m also worried about the food stalls selling food! Damn it, I’ll look around!」
+
+WA 1
+
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeIrisInUpDown
+
+BG.WH 0, 100, 100
+ST S056_1AA1BA_000_N, 0, , ,
+BG BG_012_00_0, 150@1, FadeIrisOutUpDown, 960@540
+
+【Ponse@Host Ponse,S056_B2_0003】「As I thought, Steyken of Stability is gaining popularity! It’s almost time for the deadline! 」
+
+ST.DEL , 0,
+BG.WH 0, 200, 200
+ST S008_1AA1AA_000_M, 0, 1520, ,
+ST S004_1AA1AA_000_M, 0, 960, ,
+ST S038_1AA1BA_021_M, 0, 340, ,
+
+BG BG_012_00_0, 150@1, , 240@720
+
+【Rada,S038_B2_0020】「Well, even I’m a challenger, but this place is tough and tough. Fufufu, I have good intuition. Do you remember this? 」
+
+ST S008_1AA1BA_021_M, 250, , ,
+
+【Urszula,S008_B2_0070】「All right, since I’ve come all this way, I’ll go buy Stey Ken.」
+
+MW.FC S005_1AA1AA_000_S
+【Petter,S005_B2_0071】「Since you’re here, why don’t you try buying it? This is part of your social studies. 」
+
+BG.WH 0, 100, 100
+BG BG_012_00_0, 150
+
+【】Me... Let’s follow
+
+
+
+
+
+SELECT "Buy Steiken,*B1_0009_0_1", "I’m gonna buy Jacobie.,*B1_0009_0_2"
+
+
+*B1_0009_0_1
+
+cal %g_repetition+=1
+
+【】Radha-san’s advice.
+
+ST.DEL , 0,
+BG.WH 0, 200, 200
+ST S038_1AA1CA_020_L, 0, 960, ,
+
+BG BG_012_00_0, 150@1, , 240@720
+
+【Rada,S038_B2_0021】「Hey, young man. I’ll listen to what your sister has to say.」
+
+
+goto *B1_0009_0_3
+
+
+*B1_0009_0_2
+
+
+
+【】This is a Jacoby!
+
+ST.DEL , 0,
+BG.WH 0, 200, 200
+ST S038_1AA1BA_021_L, 0, 960, ,
+
+BG BG_012_00_0, 150@1, , 240@720
+
+【Rada,S038_B2_0022】「So it’s backwards. Shaon-kun, that’s naive. Heheheh.」
+
+
+goto *B1_0009_0_3
+
+
+*B1_0009_0_3
+
+BG.WH 0, 100, 100
+BG BLACK, 250, FadeIrisInLeftRight
+
+BG.WH 0, 100, 100
+ST S056_1AA1BA_000_N, 0, , ,
+BG BG_012_00_0, 250@1, FadeIrisOutLeftRight, 960@540
+
+【Ponse@Host Ponse,S056_B2_0004】「Now then, let’s go to Batouuuuurstard!!! 」
+
+WA 1
+
+BGM , 500
+SE0 ドラの音, 0, 100@0, 1
+
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeSpeedRight
+
+WA 100,,0
+
+BGM BGM_36
+
+BG.DF 3, 10@0, 0
+
+CG.AN 2, 効果線・白・横1@5, 0@60, @@200@0, 0
+
+BG.WH 0, 150, 150
+BG BG_012_00_0, 150@1, FadeSpeedRight, 1440@540
+
+BG.XY 250, 1240, 540
+
+ST S055_1AA1AA_000_L, 1@@2, 960, -960@@250,
+SE0 勢いよく風を切る音, 0, 100@0, 1
+
+MW.TP 70
+【Steiken,S055_B2_0002】「Oraoraoraoraorah!!! 」
+
+WA 1
+
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeSpeedLeft
+
+WA 100,,0
+
+ST S054_1AA1AA_000_L, 0, , , 3200
+
+BG.DF 3, 6@6, 0
+
+BG.WH 0, 150, 150
+BG BG_012_00_0, 150@1, FadeSpeedLeft, 1440@540
+
+CG.AN 5, ヒットエフェクト・極小_H@1@5, 1@@30, 400@840, 1
+CG.WH 5, 1, 320, 320
+
+SE0 金属武器で攻撃を防ぐ音, 0, 100@0, 1
+
+ST.XY 054, 150@@2, 1200, 50
+ST.SK 054, 0, 150@0@2, 16@14, 8
+
+SC.FL 1@0xFFFFFF, 140, 1
+SC.SK 1, 100@0@2, 20@18, 5
+
+WA 200,,0
+
+CG.AN 4, ヒットエフェクト・極小_H@1@2, 1@@30, 1500@720, 1
+CG.WH 4, 1, 320, 320
+
+SE1 金属武器で攻撃を防ぐ音, 0, 100@0, 1
+
+ST.XY 054, 150@@2, 600, 100
+ST.SK 054, 0, 150@0@2, 16@14, 8
+
+SC.FL 1@0xFFFFFF, 140, 1
+SC.SK 1, 100@0@2, 20@18, 5
+
+BG.DF 3, 0@0, 150
+
+ST.XY 054, 1000@1@2, 600, 100
+ST.XY 054, 500@1@2, 960, 0
+
+MW.TP 70
+【Jacobie,S054_B2_0002】「munh! What is this?!」
+
+WA 1
+
+BG BLACK, 150, FadeIrisInUpDown
+
+BG.DF 3, 0@0, 0
+BG.WH 0, 200, 200
+
+SC.FL 1@0xFFFFFF, 0, 0
+SC.SK 1, 0@0@2, 0@0, 0
+
+ST S004_1AA1AA_000_M, 0, 1360,
+ST S048_1AA1BA_000_M, 0, 540@@@4, ,
+
+BG BG_012_00_0, 150@1, FadeIrisOutUpDown, 1500@720
+
+【Minjara,S048_B2_0049】「Ohhh, Steyken’s attack speed is pretty decent. But Jacoby’s as hard as he looks! I guess you could say he can’t take his eyes off you! 」
+
+ST S004_1AA1BA_070_M, 250,
+
+【Ebita,S004_B2_0056】「God, why don’t you get a job as a live broadcaster? 」
+
+WA 1
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeDirectionUp
+
+BG.WH 0, 150, 150
+ST S055_1AA1AA_000_M, 0 ,
+BG BG_012_00_0, 150@1, FadeDirectionUp, 1440@540
+
+
+【Steiken,S055_B2_0003】「We’re just getting excited when the Heavenly Familiar materializes! {Armstrong}!」
+
+SC.FL 1@0xAAAAAA, 140, 1
+
+SE0 天眷発動音カオス系, 0, 100@0, 1
+
+CG 0, bg/WHITE@@2, 150, , , 0@0@100@100
+CG.WH 0, 1, 1920, 1080
+
+WA 150,,0
+
+CG.DEL 0, 250
+
+CG 7, cg/手１@@2, 250, 1586@228
+CG.WH 7, 1, 80, 80
+CG.SK 7, 0, 240@0@0, 4@5, 0
+
+CG 8, cg/手２@@2, 250, 240@300
+CG.WH 8, 1, 88, 88
+CG.SK 8, 1, 220@0@0, 6@5, 0
+
+CG 6, cg/手１@1@2, 250, 620@740
+CG.WH 6, 1, 84, 84
+CG.SK 6, 0, 250@0@0, 5@4, 0
+
+CG 9, cg/手３@@2, 250, 1321@703
+CG.WH 9, 1, 78, 78
+CG.SK 9, 1, 230@0@0, 5@6, 0
+
+SE0 天眷発動音カオス系, 0, 100@0, 1
+SE1 魔力放出, 0, 100@0, 1
+
+MW.FC S004_1AA1BA_050_S
+【Ebita,S004_B2_0057】「Nnowa! The number of hands has increased?! 」
+
+MW.FC S005_1AA1AA_000_S
+【Petter,S005_B2_0072】「That’s the kind of divine spirit they are, isn’t it? There’s so many kinds of divine spirits! 」
+
+ST.DEL , 0,
+CG.DEL , 0
+BG.WH 0, 100, 100
+
+SE0 , 250
+
+ST S056_1AA1BA_000_N, 0,
+BG BG_012_00_0, 150@1, , 960@540
+
+MW.FC S056_1AA1AA_000_S
+【Ponse@Host Ponse,S056_B2_0005】「It’s a surefire way to attack them all at once with Steyken’s increased hand!」
+
+ST.DEL , 0,
+
+ST S054_1AA1AA_000_M, 0, , ,
+BG.WH 0, 150, 150
+BG BG_012_00_0, 150@1, , 480@540
+
+【Jacobie,S054_B2_0003】「Heh, that’s a flashy look. You’re the only one who’s good with the audience. 」
+
+ST.DEL , 0,
+
+BG.DF 3, 4@4, 0
+
+CG 0, ef/効果線・白・中1@4@@2@2, 0@, @@200
+CG.CL 0, 3@1, 40@0, 0
+
+ST S055_1AA1AA_000_L, 0, , ,
+
+CG 7, cg/手１@@2, 0, 1586@228
+CG.WH 7, 0, 90, 90
+CG.SK 7, 1, 240@0@0, 10@8, 0
+
+CG 8, cg/手２@@2, 0, 240@300
+CG.WH 8, 0, 96, 96
+CG.SK 8, 0, 220@0@0, 8@9, 0
+
+CG 6, cg/手１@1@2, 0, 620@800
+CG.WH 6, 0, 94, 94
+CG.SK 6, 1, 250@0@0, 12@10, 0
+
+CG 9, cg/手３@@2, 0, 1451@840
+CG.WH 9, 0, 98, 98
+CG.SK 9, 0, 230@0@0, 10@10, 0
+
+BG BG_012_00_0, 1@1, , 1440@540
+
+SE2 攻撃インパクト音２, 0, 100@0, 1
+
+SC.FL 1@0xFFFFFF, 280, 1
+SC.WH 100, 150, 150
+WA 100, , 0
+SC.WH 75, 100, 100
+
+【Steiken,S055_B2_0004】「Pull it out! You don’t stand a chance against a slow muscled Dalma! Raa!」
+
+ST.DEL , 0,
+CG.DEL , 0
+
+CG.AN 1, エア・中央@4@5, 0@@16, @@@, 0
+CG.WH 1, 0, 200, 200
+
+CG 2, bg/WHITE@4@2, 0, @@0, , 0@0@100@100
+CG.WH 2, 0, 1920, 1080
+
+BG.WH 0, 110, 110
+BG BG_099_00_0, 1@1,
+
+SE0 攻撃インパクト音, 0, 100@0, 0
+SE1 攻撃インパクト音２, 0@150, 100@0, 0
+SE2 攻撃インパクト音３, 0@300, 100@0, 0
+
+SC.SK 1, 100@0@2, 24@20, 0
+
+CG.A 2, 150@0@0@1@0, 128
+CG.A 2, 150@1@0@0@0, 100
+CG.A 2, 150@1@0@0@0, 0
+CG.A 2, 50@1@0@0@0, 0
+CG.A 2, 150@1@0@0@0, 128
+
+【Shaon】「It’s an onslaught. It’s really on the line to finish him off.」
+
+MW.FC S008_1AA1BA_092_S
+【Urszula,S008_B2_0071】「Yeah, it’s a real fight. I bet that’s why it’ll be so popular! 」
+
+WA 1
+
+SE0 , 250
+SE1 , 250
+SE2 , 250
+
+BG BLACK, 150, FadeSpeedUp
+
+SC.SK 1, 0@0@2, 0@0, 0
+
+BG.WH 0, 150, 150
+BG.DF 3, 4@4, 0
+
+CG 0, ef/効果線・白・中1@4@@2@2, 0@, @@200
+CG.CL 0, 3@1, 40@0, 0
+
+ST S055_1AA1AA_000_L, 0, , ,
+
+CG 7, cg/手１@@2, 0, 1586@228
+CG.WH 7, 0, 90, 90
+CG.SK 7, 1, 240@0@0, 10@8, 0
+
+CG 8, cg/手２@@2, 0, 240@300
+CG.WH 8, 0, 96, 96
+CG.SK 8, 0, 220@0@0, 8@9, 0
+
+CG 6, cg/手１@1@2, 0, 620@800
+CG.WH 6, 0, 94, 94
+CG.SK 6, 1, 250@0@0, 12@10, 0
+
+CG 9, cg/手３@@2, 0, 1451@840
+CG.WH 9, 0, 98, 98
+CG.SK 9, 0, 230@0@0, 10@10, 0
+
+BG BG_012_00_0, 150@1, FadeSpeedUp, 1440@540
+
+【Steiken,S055_B2_0005】「I’ll beat you up with an octopus! Let out a nice voice and liven things up! 」
+
+WA 1
+BG BLACK, 150, FadeSpeedCircleIn
+
+BG.DF 3, 0@0, 0
+
+BG BG_012_00_0, 150@1, FadeSpeedCircleOut, 520@540
+
+ST S054_1AA1AA_000_S, 1, , ,
+ST.WH 54, 1, 200, 200
+
+ST.WH 54, 150@1@9, 100, 100
+SE0 重量級の着地音, 0, 100@0, 1
+
+ST.SK 054, 0, 150@0@2, 10@8, 5
+
+SC.FL 1@0xAAAAAA, 140, 1
+SC.SK 1, 100@0@2, 20@15, 5
+
+CG.AN 0, 砂煙・土・上1速@5@5, 1@, @380@@6, 1
+CG.WH 0, 1, 200, 200
+
+【Jacobie,S054_B2_0004】「Your attacks are shallow! The manifestation of the Heavenly Familia!!」
+
+SC.FL 1@0xAAAAAA, 140, 1
+
+SE2 天眷発動音カオス系, 0, 100@0, 1
+
+CG 0, bg/WHITE@4@2, 150, , , 0@0@100@100
+CG.WH 0, 1, 1920, 1080
+
+WA 150,,0
+
+BG.DF 3, 6@6, 1
+
+CG.DEL 0, 250
+
+ST.DEL , 150, @150,
+ST.WA 054, , 0
+
+SC.SK 1, 100@0@2, 10@8, 0
+
+ST S054_1AA1AA_000_L, 150, , @150, ,
+
+CG 0, ef/効果線・白・中1@4@@2@2, 0@, @@200
+CG.CL 0, 3@1, 40@0, 0
+
+SE1 重い風切り音１, 0, 100@0, 1
+
+MW.FC S056_1AA1BA_000_S
+【Ponse@Host Ponse,S056_B2_0006】「Jacoby charged in even as he was attacked! 」
+
+WA 1
+BG BLACK, 150, FadeSpeedCircleIn
+
+BG.DF 3, 0@0, 0
+SC.SK 1, 0@0@2, 0@0, 0
+
+ST S055_1AA1AA_000_L, 0, , ,
+BG BG_012_00_0, 150@1, FadeSpeedCircleOut, 1280@540
+
+ST.DEL 55, 150, -150
+ST.SK 055, 0, 150@0@2, 10@8, 5
+ST.WA 055, , 0
+
+ST S055_1AA1AA_000_N, 150, 480, 150,
+ST.SK 055, 0, 150@0@2, 18@16, 5
+
+MW.TP 60
+【Steiken,S055_B2_0006】「Wha?! This guy... 」
+
+SE0 全力疾走, 0, 100@0, 1
+ST.XY 055, 250@@2, -980, 0
+
+WA 500,,0
+
+ST S055_1AA1AA_000_L, 1@@9, 960, @@250,
+ST.SK 055, 0, 150@0@2, 3@2, 0
+
+SE0 上空の風, 0, 100@0, 1
+SE1 暴風, 0, 100@0, 1
+
+CG.AN 8, エア・中央@4@5, 150@@16, @@@, 0
+CG.WH 8, 0, 200, 200
+
+SC.FL 1@0xFFFFFF, 140, 1
+
+【】Steken tried to run away, but his opponent sucked him in.
+
+WA 1
+BG BLACK, 150, FadeSpeedCircleIn
+
+SE0 , 250
+SE1 , 250
+SE2 , 250
+
+BG.DF 3, 0@0, 0
+
+ST S054_1AA1AA_000_L, 0, , , 3200
+
+BG BG_012_00_0, 150@1, FadeSpeedCircleOut, 520@540
+
+SE0 強く抱きしめる音, 0, 100@0, 1
+
+SC.FL 1@0xFFFFFF, 280, 1
+SC.WH 100, 150, 150
+WA 100, , 0
+SC.WH 75, 90, 90
+
+【】And then it’s brought into the throw.
+
+ST S054_1AA1AA_000_L, 250@@9, @100, , 3200
+SE0 迫る系インパクト音, 0, 100@0, 1
+
+CG 0, ef/効果線・白・中1@4@@2@2, 0@, @@200
+CG.CL 0, 3@1, 40@0, 0
+CG.WH 0, 1, 120, 120
+
+SC.FL 1@0xFFFFFF, 280, 1
+SC.WH 250, 100, 100
+
+【Jacobie,S054_B2_0005】「Meat is cut and bones are smashed. Buster!! 」
+
+WA 1
+
+BG BLACK, 150, FadeSpeedDown
+
+WA 100,,0
+
+CG.AN 5, 効果線・白・縦1@5, 1, @@200@0, 0
+
+SC.WH 0, 100, 100
+BG.WH 0, 100, 100
+
+BG.DF 3, 0@20, 0
+
+BG BG_099_00_0, 150@1, FadeSpeedDown,
+
+SE0 重い風切り音１, 0, 100@0, 1
+
+CG 1, bg/WHITE@@2, 1, @@0, , 0@0@100@100
+CG.WH 1, 1, 1920, 1080
+
+CG.A 1, 500, 128
+CG.A 1, 500@1@@2, 0
+
+WA 1500,,0
+
+BGM , 500
+
+BG BLACK, 150, FadeSpeedUp
+
+BG.WH 0, 150, 150
+BG.DF 3, 0@0, 0
+
+BG BG_012_00_0, 150@1, FadeSpeedUp, 1300@320
+
+SE1 壁に叩きつける音低速エコー, 0@150, 100@0, 1
+
+CG.AN 8, 砂煙・土・右1速@5@5, 1@@14, 0@680@255@6, 1
+CG.WH 8, 1, 200, 200
+
+SC.FL 1@0xCCCCCC, 2000, 1
+BG.SK 1, 500@0@2, 20@15, 4
+
+SC.SK 1@4, 300@0@2, 20@18, 5
+
+MW.TP 90
+MW.FC
+
+【Steiken,S055_B2_0007】「Uwah!!!」
+
+WA 1
+
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeIrisInUpDown
+
+SE0 , 250
+SE1 , 250
+SE2 , 250
+
+SC.FL 1@0xCCCCCC, 0, 0
+BG.SK 1, 0@0@2, 0@0, 0
+
+SC.SK 1@4, 0@0@2, 0@0, 0
+
+BG.WH 0, 110, 110
+ST S056_1AA1BA_000_S, 0, , ,
+BG BG_012_00_0, 150@1, FadeIrisOutUpDown, 1080@540
+
+
+
+MW.TP 90
+【Ponse@Host Ponse,S056_B2_0007】「The winner is Jacoby!! 」
+
+BGM BGM_32
+
+BG.WH 0, 150, 150
+SE0 歓声, 0, 100@0, 1
+
+ST S054_1AA1AA_000_M, 0,
+
+BG BG_012_00_0, 150@1, , 480@540
+
+【Jacobie,S054_B2_0006】「It’s simple. The big, heavy guy is amazing. He’s strong. 」
+
+WA 1
+
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeDirectionDown
+
+SE0 , 250
+
+BG.WH 0, 200, 200
+ST S008_1AA1BA_031_L, 0, 960, ,
+
+BG BG_012_00_0, 150@1, FadeDirectionDown, 1700@720
+
+ST.SK 008, 0, 150@0@2, 3@2, 5
+ST.EM 008, 驚き1_1, 1, 0
+
+【Urszula,S008_B2_0072】「Gwah, I didn’t expect that. It’s so hot...! I’m getting excited!」
+
+if(1>%g_repetition) goto *B1_0009_0_5
+
+
+
+
+
+
+
+
+*B1_0009_0_4
+
+ST.DEL , 0, 0
+BG.XY 0, 480, 720
+BG.WH 0, 180, 180
+
+ST S004_1AA1AA_000_M, 0, 570, ,
+ST S038_1AA1AA_042_M, 0, 1420, ,
+SC.FD 150,,0
+
+【Shaon】「We missed 」
+
+ST S038_1AA1CA_020_M, 250, , ,
+
+【Rada,S038_B2_0023】「That’s part of it. Don’t worry, don’t hold back! 」
+
+ST S004_1AA1BA_032_M, 250,
+
+【Ebita,S004_B2_0058】「You’re making such a refreshing face despite not expecting it.」
+
+cal %g_repetition=0
+
+
+goto *B1_0009_0_6
+
+
+
+*B1_0009_0_5
+
+ST.DEL , 0, 0
+BG.XY 0, 480, 720
+BG.WH 0, 180, 180
+
+ST S004_1AA1BB_020_M, 0, 570, ,
+ST S038_1AA1AA_010_M, 0, 1420, ,
+SC.FD 150,,0
+
+【Shaon】「I did it. I won 」
+
+ST S038_1AA1CA_020_M, 250, , ,
+
+【Rada,S038_B2_0024】「It’s good, young man. Take good care of your bikini crack. 」
+
+ST S038_1AA1CA_031_M, 250, , ,
+ST S004_1AA1BA_001_M, 250,
+
+MW.FC S005_1AA1AA_000_S
+【Petter,S005_B2_0073】「Even though you bought a ticket, you look refreshed.」
+
+ST S038_1AA1BA_021_M, 250, , ,
+
+【Rada,S038_B2_0025】「It’s a face that doesn’t show any negative emotions. Honestly, I want to cry. 」
+
+ST S038_1AA1BA_020_M, 250, , ,
+
+【Rada,S038_B2_0026】「When I’m in debt to someone I know, this face lends me more money than I expected. I feel like I’ll be able to pay it back easily. 」
+
+ST S004_1AA1AA_041_M, 250
+
+【Ebita,S004_B2_0059】「You’re a pretty useless adult.」
+
+
+goto *B1_0009_0_6
+
+
+*B1_0009_0_6
+
+ST S004_1AA1AA_000_M, 250, , ,
+ST S038_1AA1AA_000_M, 250, , ,
+
+【Shaon】「By the way, Mr. Jacoby, did you just use the Celestial Familia?」
+
+ST S038_1AA1AA_030_M, 250, , ,
+
+【Rada,S038_B2_0027】「I wonder if it’s a Celestial Familia that draws the opponent to its own side. It’s probably a short distance away, but it fits well with its own physique... Ugh. If only I knew it had such a Celemonic.」
+
+MW.FC
+【Old man confident in the arena.,S444_B2_0001】「Onee-chan, you’re so young. There are times when the Celestial Familia defeats people who don’t know their place. If you bet on them, they’ll be delicious.」
+
+ST S038_1AA1CA_040_M, 250, , ,
+ST.SK 038, 0, 150@0@2, 3@2, 5
+
+【Rada,S038_B2_0028】「No, no, old man. When you won your debut match, you didn’t use your Heavenly Familia, so I don’t think you had it. 」
+
+【Old man confident in the arena.,S444_B2_0002】「The opponent was weak in the first match, so you were able to save it. But this time, it’s Steyken. There’s a good chance it’ll come out. You have to think about that too. 」
+
+ST.DEL 4, 0,
+
+BG.WH 0, 200, 200
+BG.XY 0, 240, 800
+
+ST S038_1AA1BA_031_L, 0, 960, ,
+SC.FD 150,,0
+
+ST.SK 038, 0, 150@0@2, 8@6, 6
+
+【Rada,S038_B2_0029】「Nu-. Okay, I’ll guess next time! Besides, if you missed, that means you’ll win next time.」
+
+【Shaon】「Radha-san, don’t get too worked up... 」
+
+WA 1
+BG BLACK, 150, FadeDirectionRight
+
+BG.WH 0, 200, 200
+
+ST S048_1AA1AA_000_M, 0, 540,,
+ST S004_1AA1BB_026_M, 0, 1450@@@3, ,
+
+BG BG_012_00_0, 150@1, FadeDirectionRight, 1700@720
+
+ST.EM 004, 三線1_1, 1, 0
+
+【Ebita,S004_B2_0060】「Ahahaha. She’s amazing! It’s super fun! 」
+
+【Shaon】「? What are you laughing at all of a sudden, Ebi?」
+
+ST S048_1AA1BA_030_M, 250,
+ST.RLR 048, 500@0@-1, 40, 1
+
+
+【Minjara,S048_B2_0050】「You’ll make your daughter laugh, watch the arena, munch munch」
+
+WA 1
+BGM , 250
+
+BG.WH 0, 100, 100
+BG BLACK, 250, FadeIrisInUpDown
+
+BGM BGM_23
+
+BG.WH 0, 125, 125
+ST S054_1AA1AA_000_N, 0, 960, ,
+
+BG BG_012_00_0, 250@1, FadeIrisOutUpDown, 810@540
+
+BG.XY 500, 720, 540
+ST.XY 054, 500@@2, 520, 0
+
+ST S008_1AA1BA_092_M, 1, 1360, 800@@500,
+
+【Urszula,S008_B2_0073】「Hey, old man, you were strong! You’re up against me next!! 」
+
+ST S054_1AA1AA_000_N, 250, , ,
+
+【Jacobie,S054_B2_0007】「Ahhhn? I’ve never seen you before.」
+
+MW.FC S056_1AA1BA_000_S
+【Ponse@Host Ponse,S056_B2_0008】「Whoops! It’s a pretty girl, a beautiful girl is barging in! 」
+
+WA 1
+BG BLACK, 150, FadeDirectionDown
+
+BG.WH 0, 200, 200
+
+ST S048_1AA1BA_000_M, 0, 540,,
+ST S004_1AA1BB_020_M, 0, 1450@@@3, ,
+
+BG BG_012_00_0, 150@1, FadeDirectionDown, 1700@720
+
+MW.FC S005_1AA1AA_000_S
+【Petter,S005_B2_0074】「You did it. She couldn’t hold back her feelings, fufu」
+
+ST S048_1AA1AA_010_M, 250, @@, ,
+ST.RLR 048, 500@0@-1, 40, 1
+
+
+【Minjara,S048_B2_0051】「She probably wants to see how far her skills can get in the capital.」
+
+【】Minjara was engrossed in the hot dog, but Urszula couldn’t take it anymore...
+
+ST.DEL , 0,
+
+BG.WH 0, 200, 200
+BG.XY 0, 240, 800
+
+ST S038_1AA1BA_060_L, 0, 960, ,
+SC.FD 150,,0
+
+【Rada,S038_B2_0030】「Shaon-kun」
+
+BG.WH 0, 100, 100
+BG BLACK, 250, FadeDirectionUp
+
+BG.WH 0, 125, 125
+ST S054_1AA1AA_000_N, 0, 560, ,
+ST S008_1AA1BA_092_M, 0, 1360, ,
+
+BG BG_012_00_0, 250@1, FadeDirectionUp, 960@540
+
+【Urszula,S008_B2_0074】「We’re jumping in! We came to the capital yesterday. Let’s do it with me...!」
+
+BGM , 500
+
+ST S054_1AA1AA_000_N, 250, , ,
+
+【Jacobie,S054_B2_0008】「...Follow the proper procedure. Young lady」
+
+BGM BGM_02
+
+ST.XY 054, 500, -880, 0
+
+ST S008_1AA1AA_051_M, 250, , ,
+ST.SK 008, 0, 150@0@2, 8@6, 5
+
+ST.EM 008, 驚き1_1, 450, 0
+
+【Urszula,S008_B2_0075】「Ah, hey!! Can’t you take it like this?! 」
+
+ST.DEL 054, 1, 0
+
+ST0 10, S301_1CA1AA_000_M@32, 1, 840@@@4, -1000@@500
+
+MW.TP 60
+【Coliseum Guard,S306_B2_0001】「Hey, pick it up!」
+
+BG.XY 500@@2, 740, 540
+ST S008_1AA1AA_052_M, 250, 2400, @@500,
+
+ST.XY 010, 500, 3200, 0
+
+SE0 強く抱きしめる音, 0, 100@0, 1
+
+SC.FL 1@0xFFFFFF, 140, 1
+SC.SK 1@5, 100@0@2, 30@28, 8
+
+MW.TP 60
+【Urszula,S008_B2_0076】「Uwah」
+
+SC.SK 1@5, 0@0@2, 0@0, 0
+ST.DEL 008, 1, 0
+
+【Old man confident in the arena.,S444_B2_0003】「Fuoh-fuoh, what a pain. That’s good, that’s great! 」
+
+BG.WH 0, 100, 100
+BG BG_012_00_0, 250, , 960@540
+
+SE0 歓声, 0, 100@0, 1
+
+【】The crowd cheered warmly for Urszula.
+
+SE0 , 250
+
+BG.WH 0, 100, 100
+BG BLACK, 250, FadeIrisInUpDown
+
+BG.WH 0, 200, 200
+
+ST S038_1AA1BA_020_L, 0, , ,
+BG BG_012_00_0, 250@1, FadeIrisOutUpDown, 240@800
+
+【Rada,S038_B2_0031】「It doesn’t matter what the match is, it’ll always be fun. Sometimes, that kind of troubled customer gets caught up in the heat of the moment. If it’s just once, it can only be a sideshow. 」
+
+【Shaon】「Hoh, thank goodness... 」
+
+ST S038_1AA1BA_010_L, 250, , ,
+MW.FC S008_1AA1AA_040_S
+【Urszula,S008_B2_0077】「...Damn, I got more into it than I thought. I’m embarrassed.」
+
+ST S038_1AA1CA_031_L, 250, , ,
+
+【Rada,S038_B2_0032】「If you win the coliseum, you’ll make money. You’ll become famous. I don’t think you want to fight a pointless battle to win the big one. That’s just how it is. Fighters are people with 」
+
+【Shaon】「Professionalism, aren’t they? 」
+
+BGM , 250
+BG BLACK, 250, FadeDirectionUp
+
+BGM BGM_32
+
+BG.WH 0, 100, 100
+ST S056_1AA1BA_000_N, 0, , ,
+BG BG_012_00_0, 250@1, FadeDirectionUp, 960@540
+
+【Ponse@Host Ponse,S056_B2_0009】「Who knows. The next match will be the thrall everyone fears, the assassin Su?liebud, who sucked twenty-six people’s blood in the Swamp of the Large Sword Tiger and Singol!!」
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+【Shaon】「Whoa, what a dangerous monster!? 」
+
+WA 1
+BG BLACK, 150, FadeIrisInUpDown,
+
+BG.DF 3, 0@0, 0
+
+BG.WH 0, 200, 200
+BG.XY 0, 480, 540
+
+ST S038_1AA1AA_000_M, 0, 1480, ,
+ST S048_1AA1AA_000_M, 0, 540@@@3, ,
+
+BG BG_012_00_0, 250@1, FadeIrisOutUpDown, 1700@800
+
+【Minjara,S048_B2_0052】「If those monsters go on a rampage, the spectators here will die 」
+
+ST S038_1AA1BA_031_M, 250, , ,
+
+【Rada,S038_B2_0033】「But that won’t happen, will it? Those guards will protect them.」
+
+MW.FC S005_1AA1AA_000_S
+【Petter,S005_B2_0075】「The coliseum is the source of income for the Empire, entertainment, and gas for the people... Anyway, it’s an important facility. It’s similar in the Commonwealth, so 」
+
+ST S038_1AA1BA_020_M, 250, , ,
+
+【Rada,S038_B2_0034】「That’s why I’m careful about safety. That coliseam guard is strong. There’s a lot of work done by past fighters. 」
+
+ST.DEL , 0,
+
+BG.XY 0, 1700, 800
+
+ST S008_1AA1AA_001_L, 0, , ,
+SC.FD 150,,0
+
+【Urszula,S008_B2_0078】「I may not be serious, but I was thrown out just now.」
+
+ST S008_1AA1AA_000_L, 250, , ,
+
+MW.FC S048_1AA1AA_032_S
+【Minjara,S048_B2_0053】「Well, you’ll calm down after eating. Look at this takoyaki. It’s crunchy outside, and it’s perfect for pouring ale in. 」
+
+MW.FC S005_1AA1AA_000_S
+【Petter,S005_B2_0076】「Be careful not to eat too much food. Hypertension is a formidable enemy. Urszula, even you’re an enemy. 」
+
+ST S008_1AA1AA_021_L, 250, , ,
+
+【Urszula,S008_B2_0079】「I have nothing to do with sickness. Not a single bad thing about it.」
+
+MW.FC S005_1AA1AA_000_S
+【Petter,S005_B2_0077】「That’s what everyone says when they’re young... 」
+
+BG.WH 0, 100, 100
+BG BLACK, 250, FadeDirectionUp
+
+BG.WH 0, 100, 100
+ST S056_1AA1BA_000_N, 0, , ,
+BG BG_012_00_0, 250@1, FadeDirectionUp, 960@540
+
+【Ponse@Host Ponse,S056_B2_0010】「Now, facing these two is the strongest being... 」
+
+【Audience 523,S426_B2_0001】「Rhodia!! Low-Death!!」
+
+【Audience 971,S427_B2_0001】「It’s Rhodia’s forehead!! Low Deaaaah!! 」
+
+ST.DEL , 0,
+
+BG.WH 0, 200, 200
+BG.XY 0, 240, 800
+
+ST S004_1AA1BB_021_L, 0, , ,
+SC.FD 150,,0
+
+【Ebita,S004_B2_0061】「Ooooh, everyone’s calling. You’re going to get something that amazing? 」
+
+ST.DEL , 0,
+
+BG.WH 0, 125, 125
+ST S056_1AA1BA_000_N, 0, , ,
+BG BG_012_00_0, 150@1, , 1200@540
+
+【Ponse@Host Ponse,S056_B2_0011】「Colosseum 323 matches, 323 wins! Dragon factor seethes! I feel hot blood! Ron’s invincible fighter!! Rhodiiiiiiiiii!!!!」
+
+BG.WH 0, 100, 100
+BG BG_012_00_0, 1, , 960@540
+
+SE0 歓声, 0, 100@0, 1
+
+CG.AN 8, エア・中央@4@5, 1@@16, @@@, 0
+CG.WH 8, 0, 200, 200
+
+SC.FL 1@0xFFFFFF, 280, 1
+SC.SK 1, 300@0@2, 6@4, 0
+
+SC.WH 100, 150, 150
+WA 100, , 0
+SC.WH 75, 100, 100
+
+【】The coliseum was engulfed in cheers.
+
+CG.DEL , 0
+
+SC.FL 1@0xFFFFFF, 0, 0
+SC.SK 1, 0@0@2, 0@0, 0
+
+ST.DEL , 0, 0
+BG.WH 0, 200, 200
+BG.XY 0, 240, 800
+
+ST S008_1AA1AA_000_M, 0, 1360, ,
+ST S038_1AA1BA_031_M, 0, 560, ,
+SC.FD 150
+
+【Rada,S038_B2_0035】「Ron is half dragon and half human, so that makes sense. If 」
+
+ST S038_1AA1CA_021_M, 250, , ,
+
+【Rada,S038_B2_0036】「Rhodia fights, it’s not a bet based on victory or defeat. Because they’re too strong, they change their bet to say their opponent lasts for a few seconds.」
+
+SE0 重いドアを押し開く音, 0, 100@0, 1
+BG BLACK, 250, FadeIrisInLeftRight
+
+WA 500,,0
+
+BG.WH 0, 100, 100
+SE0 , 250
+
+CG 7, bg/WHITE, 0, @900@128@4,
+CG.CF 7, 2, 0xFFD7AA, 0
+CG.WH 7, 0, 100, 0
+
+ST S044_1AA1AA_000_N, 0, , ,
+BG BG_012_00_0, 250@1, FadeIrisOutLeftRight, 960@540
+
+SE1 歓声, 0, 100@0, 1
+
+CG.WH 7, 250, 100, 20
+
+WA 250,,0
+
+CG 5, cg/キャラ名・ロディア, 0, @900@@4
+SC.FD 500, FadeCurtainLeft@512,0
+
+WA 250,,0
+
+WA 1000,,2
+
+CG.DEL , 250
+
+WA 250,,0
+
+MW.FC S008_1AA1AA_002_S
+【Urszula,S008_B2_0080】「So that’s Rhodia, huh? ...I see... I take a good look at the girl called 」
+
+ST.DEL , 0,
+BG.WH 0, 125, 125
+
+ST S044_1AA1AA_000_L, 0, , ,
+SC.FD 150,,0
+
+【】Rhodia.
+
+【Shaon】「...She’s definitely strong... and beautiful... I feel like I’ve seen her somewhere before... That feeling.」
+
+MW.FC S005_1AA1AA_000_S
+【Petter,S005_B2_0078】「The Lon tribe, who were probably mixed in with the people from the Commonwealth who attacked the bandit fortress, 」
+
+SE1 , 250
+
+BG.WH 0, 100, 100
+BG BLACK, 500, FadeClockLeft@128
+
+
+CG 0, cg/回想ぼかし, 0
+
+BG.WH 0, 100, 100
+ST S024_1AA1BA_033_M, 0,
+BG BG_007_04_0, 500@1, FadeClockLeft@128, 960@540
+
+【Shaon】「Aah... Um! 」
+
+BG.WH 0, 100, 100
+BG BLACK, 250, FadeClockRight
+
+BG.WH 0, 200, 200
+
+ST S008_1AA1AA_000_M, 0, 1360, ,
+ST S038_1AA1CA_031_M, 0, 560, ,
+BG BG_012_00_0, 250@1, FadeClockRight, 240@800
+
+【Rada,S038_B2_0037】「Mm, four seconds! Let’s bet on four seconds.」
+
+WA 1
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeDirectionUp
+
+CG 0, cg/黒枠@4, 0
+BG.DF 3, 4@4, 0
+
+BG.WH 0, 125, 125
+ST S044_1AA1AA_000_N, 0, , ,
+BG BG_012_00_0, 150@1, FadeDirectionUp, 1200@540
+
+SE0 剣虎のうなり声, 0, 100@0, 1
+SE1 蝙蝠の鳴き声, 0, 100@0, 1
+
+【Rodia,S044_B2_0001】「...」
+
+【】The monsters were threatening Rhodia from inside the cage.
+
+ST S044_1AA1AA_000_N, 250, , ,
+
+【Rodia,S044_B2_0002】「You guys were brought here too.」
+
+ST S044_1AA1AA_070_N, 250, , ,
+
+【Rodia,S044_B2_0003】「End the match in an instant, 」
+
+WA 1
+BG BLACK, 150, FadeDirectionRight
+
+BG.DF 3, 0@0, 0
+
+ST S056_1AA1BA_000_S, 0
+BG BG_012_00_0, 150@1, FadeDirectionRight, 1200@540
+
+MW.TP 60
+【Ponse@Host Ponse,S056_B2_0012】「Begin the match!!!! 」
+
+WA 1
+
+BGM , 150
+SE0 ドラの音, 0, 100@0, 1
+
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeSpeedLeft
+
+BGM BGM_16
+
+BG.WH 0, 150, 150
+BG BG_012_00_0, 250@1, FadeSpeedLeft, 600@540
+
+SE2 剣虎のうなり声, 0, 100@0, 1
+
+CG 5, cg/剣虎@1, 1, -200@360, -1400@@500, @@2400@2400
+CG.SK 5, 0, 250@0@0, 4@3, 0
+
+SE1 蝙蝠の鳴き声, 0, 100@0, 1
+
+CG 6, cg/スェリーバッド・小, 1, 1660@880, 1400@@500, @@2400@2400
+CG.WH 6, 1, 80, 80
+
+CG.SK 6, 0, 250@0@0, 4@3, 4
+
+WA 500,,0
+
+CG.XY 6, 1@@@1@0, 1660, 880
+
+CG.XY 6, 350@1@@0@0, 1560, 920
+CG.XY 6, 450@1@@0@0, 1760, 920
+CG.XY 6, 350@1@@0@0, 1660, 880
+
+WA 1000,,0
+
+SC.FD 250, FadeSpeedUp@512,0
+
+WA 250,,0
+
+BGM , 0
+
+BG BLACK, 1,
+
+CG.AN 3, 汎用ヒット３_H@@2, 1@@30, 460@440, 1
+CG.WH 3, 1, 370, 370
+
+SE2 超ボディ, 0, 100@0, 1
+
+SC.FL 1@0xFFFFFF, 140, 1
+
+WA 150,,0
+
+CG.AN 2, 汎用ヒット３_H@@2, 1@@30, 1520@640, 1
+CG.WH 2, 1, 420, 420
+
+SE1 超ストレート, 0, 100@0, 1
+
+SC.FL 1@0xFFFFFF, 140, 1
+SC.SK 1@4, 100@0@2, 30@28, 8
+
+【】 released from the cage for only two seconds.
+
+BG.WH 0, 125, 125
+
+CG.DEL , 0
+SE0 , 250
+SE1 , 250
+SE2 , 250
+
+SC.SK 1@4, 0@0@2, 0@0, 0
+ST S044_1AA1AA_000_N, 0, @@@, ,
+
+BG BG_012_00_0, 150@1, , 740@540
+
+SE0 倒れる音, 0, 100@0, 1
+SE1 倒れる音, 0@150, 100@0, 1
+
+SC.FL 1@0xFFFFFF, 140, 2
+SC.SK 1, 100@0@2, 30@28, 8
+
+CG.AN 0, 砂煙・土・上1速@4@5, 1@, 480@480@@,
+CG.WH 0, 1, 220, 220
+
+CG.AN 1, 砂煙・土・上1速@4@5, 1@250, 1440@480@@,
+CG.WH 1, 1, 240, 240
+
+WA 500,,0
+
+【】The thing that had been my life just a moment ago is lying there. The girl named Rhodia instantly kills the monster.
+
+WA 1
+
+CG.DEL , 0
+BG BLACK, 150, FadeDirectionRight
+
+BG.WH 0, 100, 100
+SE0 歓声, 0, 100@0, 1
+
+ST S056_1AA1BA_010_S, 0,
+BG BG_012_00_0, 150@1, FadeDirectionRight,
+
+【Ponse@Host Ponse,S056_B2_0013】「2 seconds! As usual, I have no intention of getting excited! But that’s fine! That’s good!! It’s just a Soul Reaper who stoically kills his opponent! The challenger is always on the receiving end! 」
+
+WA 1
+SE0 , 250
+
+BG.WH 0, 100, 100
+BG BLACK, 250, FadeIrisInUpDown
+
+BGM BGM_02
+
+BG.WH 0, 200, 200
+
+ST S038_1AA1BA_050_L, 0, , ,
+BG BG_012_00_0, 250@1, FadeIrisOutUpDown, 240@800
+
+ST.SK 038, 0, 150@0@2, 8@6, 8
+
+【Rada,S038_B2_0038】「Ahhh, it’s too early!! I missed!!」
+
+【】Could it be that Radha-san’s intuition is good, but gambling is weak?
+
+ST.DEL , 0,
+
+BG.XY 0, 1500, 800
+ST S004_1AA1AA_000_M, 0, 560, ,
+ST S008_1AA1AA_031_M, 0, 1410, ,
+SC.FD 150
+
+【Urszula,S008_B2_0081】「......She’s unbelievably strong. Did she use Heavenly Familia? 」
+
+ST S008_1AA1AA_030_M, 250, , ,
+MW.FC S048_1AA1AA_010_S
+【Minjara,S048_B2_0054】「She probably didn’t. She defeated her with a normal attack.」
+
+【Shaon】「Do you think you can beat Rhodia, Urszula? 」
+
+ST S008_1AA1AB_040_M, 250, , ,
+
+【Urszula,S008_B2_0082】「...I hate to admit it, but... even if you do it now, you’ll never win...! 」
+
+ST S004_1AA1BA_010_M, 250, , ,
+
+【Ebita,S004_B2_0062】「If you can tell how strong your opponent is, then you’ve grown.」
+
+WA 1
+
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeDirectionUp
+
+BG.WH 0, 110, 110
+ST S044_1AA1AA_000_N, 0, , ,
+BG BG_012_00_0, 150@1, FadeDirectionUp, 960@540
+
+BG.XY 750@@2, 1080, 540
+ST.XY 044, 750, -880, 0
+
+【】Rhodia coolly left.
+
+WA 1
+BG BLACK, 150, FadeDirectionDown
+
+BG.WH 0, 200, 200
+
+ST S038_1AA1AA_000_M, 0, 520, ,
+ST S008_1AA1AB_001_M, 0, 1450, ,
+BG BG_012_00_0, 250@1, FadeDirectionDown, 240@800
+
+【Urszula,S008_B2_0083】「If she’s that strong, then she can become one of the Five Stars, right? 」
+
+ST S008_1AA1AB_000_M, 250, ,
+ST S038_1AA1BA_042_M, 250, , ,
+
+【Rada,S038_B2_0039】「Rhodia has no intention of doing that. You saw how cool she looks.」
+
+ST S038_1AA1BA_060_M, 250, , ,
+
+【Rada,S038_B2_0040】「She doesn’t seem interested in anything, does she? She usually guards Lord Nervion, a member of the Imperial family, and only comes to the coliseum when there’s a match. 」
+
+ST.DEL , 0,
+
+BG.XY 0, 1500, 800
+ST S048_1AA1AA_000_M, 0, 1410@@@6, ,
+ST S004_1AA1BB_070_M, 0, 560, ,
+SC.FD 150
+
+ST.RLR 004, 500@0@-1, 30, 1
+
+【Ebita,S004_B2_0063】「Nervions... I’ve heard that somewhere before... Have I read about it in the newspaper? 」
+
+ST S004_1AA1BB_000_M, 250, ,
+MW.FC S005_1AA1AA_000_S
+【Petter,S005_B2_0079】「Raniero’s son. He’s the younger brother of Emperor Noa.」
+
+ST S048_1AA1BA_010_M, 250,
+
+【Minjara,S048_B2_0055】「Oh? There’s so much to learn, it’s hard, Shaon.」
+
+【Shaon】「It’s fun to spread out the world. 」
+
+ST.DEL , 0,
+BG.WH 0, 200, 200
+BG.XY 0, 240, 800
+
+ST S038_1AA1CA_020_L, 0, , ,
+SC.FD 150,,0
+
+ST.DU 038, 500@0@2, -30, 1
+
+【Rada,S038_B2_0041】「I’ll definitely win next time! Then I’ll treat you to some.」
+
+WA 1
+BG BLACK, 150, FadeDirectionDown
+
+BG.WH 0, 100, 100
+BG BG_099_00_0, 150, FadeDirectionDown
+
+【】We went sightseeing around the capital, with the coliseum at the center.
+
+BGM , 250
+BG.WH 0, 100, 100
+BG BLACK, 500, FadeClockRight@128
+
+BG BG_099_04_0, 500, FadeClockRight@128
+
+【】-That night.
+
+BG.WH 0, 100, 100
+BG BLACK, 250, FadeDirectionUp
+
+BGM BGM_04
+
+
+
+
+BG.WH 0, 100, 100
+ST S035_1BA1AA_010_M, 0, 560, ,
+ST S004_1AA1BB_026_M, 0, 1360, ,
+
+BG BG_049_03_0, 250@1, FadeDirectionUp, 960@540
+
+【Ebita,S004_B2_0064】「Yaaaah, that was amazing. And Radha was totally off the mark!」
+
+ST S004_1AA1BB_025_M, 250, , ,
+ST S035_1BA1AA_042_M, 250, , ,
+
+【Foru,S035_B2_0042】「Hehe. I’m glad we had a fun day. 」
+
+【Shaon】「Thanks to you, Radha-san, for escorting me. 」
+
+ST S004_1AA1BB_001_M, 250, , ,
+ST S035_1BA1AA_035_M, 250, , ,
+
+【Foru,S035_B2_0043】「Tomorrow, Shaon-kun and Urszula will come with me. We’ve arranged for you to be introduced to the Imperial Army.」
+
+ST S035_1BA1AA_040_M, 250, , ,
+
+【Foru,S035_B2_0044】「...If the Damian Urszula mentioned really is General Damian, then it’s definitely better to use that connection, but 」
+
+ST.DEL , 0, 0
+BG.WH 0, 150, 150
+BG.XY 0, 480, 540
+
+ST S008_1AA1AA_041_L, 0, , ,
+SC.FD 150
+
+【Urszula,S008_B2_0084】「She’s not here, so it can’t be helped. When that time comes, I’ll move while I can. I’ve seen someone so strong 」
+
+ST S008_1AA1AA_020_L, 250, , ,
+
+【Urszula,S008_B2_0085】「Today. My body’s itching to do it! Training!!」
+
+ST.XY 008, 500, 400, 1200
+WA 500,,1
+
+MW.FC S048_1AA1AA_032_S
+【Minjara,S048_B2_0056】「Don’t do push-ups here. Do it in your own room. 」
+
+WA 1
+BG.WH 0, 100, 100
+BG BLACK, 150, FadeDirectionRight
+
+WA 50,,0
+
+BG.WH 0, 125, 125
+ST S048_1AA1AA_031_M, 0, 490@@@6,
+ST S035_1BA1AA_010_M, 0, 1430, ,
+BG BG_049_03_0, 150@1, FadeDirectionRight, 1080@540
+
+【Foru,S035_B2_0045】「Ahaha. The house suddenly became lively. Gulp, gulp, 」
+
+ST S048_1AA1AA_010_M, 250,
+
+【Minjara,S048_B2_0057】「Foru. You don’t drink wine all the time. I like it.」
+
+ST S035_1BA1AA_042_M, 250, , ,
+
+【Foru,S035_B2_0046】「Once I’m done with work, I’ll drink and sleep! That’s all I’ve got. Come on, God, drink it. It’s called divine wine. 」
+
+ST S048_1AA1AA_000_M, 250, @@, ,
+ST.DU 048, 500@0@2, 40, 1
+
+【Minjara,S048_B2_0058】「Fine. ...Gulp, heh, this is a good grape. The sweetness is running wild in my mouth. 」
+
+MW.FC S005_1AA1AA_000_S
+【Petter,S005_B2_0080】「This is Celal wine from Treley County. The head of the Commonwealth likes it too. I know he likes alcohol. ...Still, I can’t help but be jealous of his body.」
+
+ST S035_1BA1AA_010_M, 250, , ,
+
+【Foru,S035_B2_0047】「All right. Let’s have a drinking contest with the gods.」
+
+BGM , 500
+BG.WH 0, 100, 100
+BG BLACK, 1000, FadeCircleIn
+
+XM.E 12
+
+WA 500,,0
+
+goto *B1_0009_1
+
+
